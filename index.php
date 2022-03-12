@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature</title>
+    <link rel="stylesheet" href="Css/takingTemperature.css" type="text/css">
     
 </head>
 <body>
@@ -14,14 +15,15 @@
         <input type="text" name="name" placeholder = "Name" autocomplete = "off">
         <br><br>
         <?php
-            $temp = rand_float(26,32);
-            function rand_float($st_num=0,$end_num=1,$mul=100)
-            {
-            if ($st_num>$end_num) return false;
-            return mt_rand($st_num*$mul,$end_num*$mul)/$mul;
-            }   
+            $temp = 24.5;
+            
+            if($temp <=27.0){
+                echo '<div class ="typeNormal">'.$temp.'</div>';
+            }else{
+                echo '<div class ="typeFever">'.$temp.'</div>';
+            }
  
-            echo '<input type="number" name="temperature" value = "'.$temp.'"  >'
+            
 
         ?>
         <br><br>

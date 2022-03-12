@@ -1,0 +1,22 @@
+%circleBase{
+    width: 15rem;
+    height : 15rem;
+    font-size: 4rem;
+    border:40px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.typeNormal{
+    @extend %circleBase;
+    background-color: greenyellow;
+    border: 1rem solid green;
+}
+
+.typeFever{
+    @extend %circleBase;
+    background-color: orangered;
+    border: 1rem solid red;
+}

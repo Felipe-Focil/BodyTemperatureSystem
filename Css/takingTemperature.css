@@ -1,0 +1,27 @@
+.typeNormal, .typeFever {
+  width: 15rem;
+  height: 15rem;
+  font-size: 4rem;
+  border: 40px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.typeNormal {
+  background-color: greenyellow;
+  border: 1rem solid green;
+}
+
+.typeFever {
+  background-color: orangered;
+  border: 1rem solid red;
+}
+/*# sourceMappingURL=takingTemperature.css.map */
