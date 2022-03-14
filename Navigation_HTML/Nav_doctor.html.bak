@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<table  bgcolor="purple" cellpadding="2" cellspacing="2" align="center" width="95%" border="0">
+        <tr>
+            <td align="center"><a href="General_Index.html" target="Aprincipal"><button style="background-color: rgb(255, 255, 255)">Home</button></a></td>
+			<td align="center"><a href="Temperature2.html" target="Aprincipal"><button style="background-color: rgb(100, 233, 224)">Current</button></a></td>
+			<td align="center"><a href="Historic_Table.html" target="Aprincipal"><button style="background-color: rgb(255, 162, 0)">Historic Table</button></a></td>
+			<td align="center"><a href="Historic_Graph.html" target="Aprincipal"><button style="background-color: rgb(73, 195, 16)">Historic Graph</button></a></td>
+			<td align="center"><a href="" target="Aprincipal"><button style="background-color: rgb(244, 226, 67)">Search Patient</button></a></td>
+			<td align="center"><a href="login_D.html" target="_top"><button style="background-color: rgb(255, 255, 255)">Log out</button>	</a></td>
+		</tr>
+ </table>
+ </html>

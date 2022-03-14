@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir empleado</title>
+</head>
+
+<body>
+   <table align="center" >
+<FORM name="fvalida" method="POST">
+<tr align="center">
+        <td colspan="3"><b><h1 style="color:#060cab;">ADD DOCTOR ACCOUNT</h1></b></td>
+    </tr>
+
+<tr>
+<td align="left">Name:</td>
+<td colspan="3" ><INPUT TYPE="Text" id="Nombre" VALUE="" SIZE="30" NAME="Campo_01"></td>
+</tr>
+<br>
+<tr>
+<td align="left">Last name:</td>
+<td colspan="3" ><INPUT TYPE="Text" id="Apellidos" VALUE="" SIZE="30" NAME="Campo_02"></td>
+</tr>
+<br>
+<tr>
+<td align="left">Age:</td>
+<td colspan="3" ><INPUT TYPE="number" id="Edad" VALUE="" MIN="18" MAX="90" NAME="Campo_03"></td>
+</tr>
+<br>
+<tr>
+<td align="left">Phone:</td>
+<td colspan="3" ><INPUT TYPE="Text" id="Puesto" VALUE="" SIZE="30" NAME="Campo_04"></td>
+</tr>
+<br>
+<tr>
+<td align="left">Email:</td>
+<td colspan="3" ><INPUT VALUE="" id="Email" TYPE="text" SIZE="30" NAME="Campo_05" ></td>
+</tr>
+<br>
+<tr>
+<td align="left">Password: </td>
+<td colspan="3" width="90px"><INPUT VALUE="" id="Mensaje" TYPE="text" SIZE="20" NAME="Campo_06" ></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td colspan="2">
+<a href=".html">
+        <input type="button" value="CANCELAR" style="background-color: rgb(249, 38, 38);">
+    </a>
+<input type="button" value="GUARDAR" onclick="valida_envia()" style="background-color: rgb(205, 249, 72);"></td>
+</tr>
+</form>
+</table>
+</body>
+
+<script type="text/javascript">
+  function valida_envia(){
+	
+    if(document.fvalida.Campo_01.value==""){
+        alert("You must enter a name")
+        document.fvalida.Campo_01.focus()
+        return 0;
+      }
+      if(document.fvalida.Campo_02.value==""){
+        alert("You must enter a last name")
+        document.fvalida.Campo_02.focus()
+        return 0;
+      }
+      if(document.fvalida.Campo_03.value==""){
+        alert("You must enter an age")
+        document.fvalida.Campo_03.focus()
+        return 0;
+      }
+	  if(document.fvalida.Campo_03.value<18){
+        alert("the doctor must be above 18 years old")
+        document.fvalida.Campo_03.focus()
+        return 0;
+      }
+	  if(document.fvalida.Campo_03.value>91){
+        alert("the doctor's age is not into the range")
+        document.fvalida.Campo_03.focus()
+        return 0;
+      }
+      if(document.fvalida.Campo_04.value==""){
+        alert("you must enter a phone number")
+        document.fvalida.Campo_04.focus()
+        return 0;
+      }
+      if(document.fvalida.Campo_05.value==""){
+        alert("Debe introducir un email")
+        document.fvalida.Campo_05.focus()
+        return 0;
+      }
+      if(document.fvalida.Campo_06.value==""){
+        alert("you must enter a password")
+        document.fvalida.Campo_06.focus()
+        return 0;
+      }
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(document.fvalida.Campo_05.value)) //Validar email
+  {
+  }
+  else {
+    alert("wrong mail address");
+    document.fvalida.Campo_05.focus()
+    return 0;
+  }
+  if(document.fvalida.Campo_03.value < 18){
+    alert("Wrong age")
+    document.fvalida.Campo_03.focus()
+    return 0;
+  }
+  alert("Doctor added. The user must have to verify its email")
+      document.fvalida.submit();
+  }
+</script>
+
+
+</html>

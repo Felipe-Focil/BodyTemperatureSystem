@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Search Patient</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Search.js"></script>
+</head> 
+
+<body>
+   <table align="center" border="0">
+<FORM name="fvalida" method="POST">
+<tr>
+<td align="left">ID:</td>
+<td><INPUT TYPE="Number" id="Nombre" VALUE="" SIZE="30" NAME="Campo_01"></td>
+</tr>
+<br>
+<tr>
+<td colspan=2 align="center">
+	<input type="button" value="Search" onclick="showText()" style="cursor: pointer; background-color: rgb(205, 249, 72);"></td></tr>
+</form>
+</table>
+   
+    <div id="divMsg" style="background: red; display: none; color: white; "align=center>
+        Here will display the Patient Info
+    </div>
+
+</html>

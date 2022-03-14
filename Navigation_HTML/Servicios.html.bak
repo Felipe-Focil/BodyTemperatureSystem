@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios</title>
+</head> 
+
+<body>
+  
+  <table border="0" width="90%" height="90%" align="center">
+<tr>
+            <td align= "center"><h3>Programación de PLC's</h3>
+			<img src="Resources/Curso.jpg" width ="500" height="300">
+			<h4>programación nueva integrándola al sistema de gestión de la planta, un acondicionamiento o mantenimiento a 
+			algunos dispositivos ya existentes, dar mantenimiento preventivo y correctivo de los PLC’s, etcétera</h4>
+			</td> 
+			<td align= "center"><h3>Migración de PLC's</h3>
+			<img src="Resources/Curso.jpg" width ="500" height="300">
+			<h4>Se realiza cuando un PLC ya es muy viejo, de alguna marca que ya no brinda soporte, que venía con alguna estación 
+			de la cual ya no pueden modificar el plc por extravío de contraseña, entre otras cuestiones que pueden sucitarse</h4></td>
+			<td align= "center"><h3>Manufactura de estaciones de ensamble</h3>
+			<img src="Resources/Curso.jpg" width ="500" height="300">
+			<h4>Puede comprender desde el reacondicionado de una estación hasta la realización de una estación desde cero.</h4></td>
+		</tr>
+		
+<tr>
+            <td align= "center"><h3>Soldadura Industrial</h3>
+			<img src="Resources/Curso.jpg" width ="500" height="300">
+			<h4>Pueden comprender estructuras para pruebas, mesas de inspección, manejo de piezas,etcétera.</h4></td>
+			<td align= "center"><h3>Diseño, Acomodado y Manufactura de Gabinetes de Control</h3>
+			<img src="Resources/Curso.jpg" width ="500" height="300">
+			<h4>Reacondicionamiento de tableros de control que pueden estar pésimamente conectados y dejarlos acorde a las necesidades del 
+			cliente o del área de mantenimiento.</h4>
+			</td>
+			<td align= "center"><h3>Maquinados de precisión</h3>
+			<br>
+			<img src="Resources/Curso.jpg" width ="500" height="300">
+			<h4>Diseño y hechura de piezas para reemplazo o acondicionamiento de estaciones.</h4>
+</td>
+		</tr>
+</table>
+</body>
+</html>

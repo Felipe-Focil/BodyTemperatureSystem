@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+</head>
+<body>
+	 <form name="fvalida" action="BTS_Patient.html" method="POST">
+        <table  width="575" height="400" align="center">
+            <tr>
+                <td colspan="3" align="center"><input type="image" src="./Resources/Login.png" width="150px" height="150px">
+                 </td>
+             </tr>
+            <tr align="center">
+                <td colspan="3"><b style="color:#020202; font-size:30px;">Log In</b></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">Email:</td>
+                <td>
+                    <input type="email" name="correo" id="email" size="30" maxlength="80" value="" autocomplete="email" required/>
+                </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" align="right">Password:</td>
+              <td>
+                  <input type="password" name="contraseña" id="password" size="30" maxlength="30" value="" autocomplete="password" required/>
+              </td>
+          </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <a href="BTS_Patient.html"></a>
+                    <input type="button" value="Log In" onclick="iniciar_sesion()">
+                </td>
+            </tr>
+			 <tr>
+                <td colspan="3" align="center">
+                    <a href="Recuperar_password.html">I forget my password </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+    <script type="text/javascript">
+    function iniciar_sesion()
+{
+  if (document.fvalida.email.value=='')
+  {
+    alert("You must enter an email");
+    document.fvalida.email.focus()
+    return 0;
+  }
+  if (document.fvalida.password.value=='')
+  {
+    alert("You must enter a password");
+    document.fvalida.password.focus()
+    return 0;
+  }
+
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(document.fvalida.email.value)) //Validar email
+  {
+  }
+  else {
+    alert("The email is incorrect");
+    document.fvalida.email.focus()
+    return 0;
+  }
+
+  if (document.fvalida.password.value=='contraseña')
+    {
+        document.fvalida.submit();
+    }
+    else {
+      alert("The password is wrong");
+      document.fvalida.password.focus()
+      return 0;
+    }
+ }
+    </script>
+</html>

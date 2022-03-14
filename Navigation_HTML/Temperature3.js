@@ -1,0 +1,4 @@
+
+              function showText() {
+            $('#divMsg').show();
+        }
