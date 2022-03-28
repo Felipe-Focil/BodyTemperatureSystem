@@ -15,36 +15,21 @@
         <br>
         <h2>We sent an Email to: </h2>
         <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "bts";
-            $user = "patient";
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
-            }
-            
-            $sql = "SELECT mail FROM $user";
-            $result = $conn->query($sql);
-            
-            if ($result->num_rows > 0) {
-              // output data of each row
-              while($row = $result->fetch_assoc()) {
-                echo "<h3> " . $row["mail"]. "</h3>";
-              }
-            } else {
-              echo "0 results";
-            }
+            $mail = $_GET["mail"];
+            $user = $_GET["user"];
 
+             echo "<h3> " .$mail. "</h3>";
 
-            $conn->close();
+             //THIS EMAIL CODE IS NOT WORKING
+             $subject = "Account Validation"; 
+             $message = "<h1> Account Validation </h1> <br><br>";
 
-            ?>
-        
+             //DO NOT TOUCH THIS LINE
+             $message .= "<h2>https://agilebts.000webhostapp.com/validate.php?mail=$mail&user=$user </h2>";
 
+            //THIS EMAIL CODE IS NOT WORKING
+             mail($mail,$subject,$message);  
+        ?>
         <br><h2>Please Complete Verification Proccess</h2><br>
         <h4>You can close this window</h4>
     </div>

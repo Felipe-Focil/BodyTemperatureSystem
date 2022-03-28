@@ -1,5 +1,3 @@
-
-
 #include <cactus_io_AM2302.h>
 
 #include <SoftwareSerial.h>

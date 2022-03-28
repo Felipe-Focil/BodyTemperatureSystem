@@ -11,36 +11,20 @@
 <body>
 
     <div>
-        <h1>Account Validate</h1>
-        <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "bts";
-            $user = "patient";
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
-            }
+      <?php
+           include("con_db.php");
             
-            $sql = "SELECT mail FROM $user";
-            $result = $conn->query($sql);
             
-            if ($result->num_rows > 0) {
-              // output data of each row
-              while($row = $result->fetch_assoc()) {
-                  $mail = $row["mail"];
-                echo "<h3> " . $row["mail"]. "</h3>";
-              }
-            } else {
-              echo "0 results";
-            }
-            $sql = "UPDATE  $user SET validated = 1 WHERE mail = '$mail' ;";
-            $result = $conn->query($sql);
+            $mail = $_GET["mail"];
+            $user = $_GET["user"];
+            
+            
 
-            $conn->close();
+            $query = "UPDATE  $user SET validated = 1 WHERE mail = '$mail';";
+            echo "<h1>Account Verified</h1>";
+            $result = mysqli_query($conex,$query);
+
+            
 
             ?>
         

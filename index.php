@@ -15,7 +15,7 @@
         <input type="text" name="name" placeholder = "Name" autocomplete = "off">
         <br><br>
         <?php
-            $temp = 24.5;
+            $temp = 28.5;
             
             if($temp <=27.0){
                 echo '<div class ="typeNormal">'.$temp.'</div>';
