@@ -30,11 +30,14 @@
             <td align="left">Temperature:</td>
             <td><INPUT TYPE="Number" name="Temperature" MAX="4" width="10px"></td>
             <br>
+            </tr>
+        <tr>
             <td>
                 <input type="button" value="Ok" onclick="valida_envia()" style="background-color: rgb(205, 249, 72);"> </td>
                 
                 
             </td>
+    </tr>
             <?php
                     include("UpdateTemp.php");
                 ?>
