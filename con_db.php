@@ -1,3 +1,2 @@
 <?php
-    $conex=mysqli_connect("localhost", "id18656049_team2", "#AgileAdmin2022", "id18656049_bts"); 
-?>
+    $conex=mysqli_connect("localhost", "id18903683_bts", "#AgileBTS2022", "id18903683_agilebts"); 

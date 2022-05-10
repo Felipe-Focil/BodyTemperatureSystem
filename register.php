@@ -12,6 +12,8 @@
                 $user = "patient";
                 $query = "INSERT INTO `patient` (`id`, `name`, `last_name`, `mail`, `Vpassword`, `validated`, `doctor_id`, `temperature_history_id`)
                 VALUES(NULL, '$name', '$lastName', '$email','$password','0',NULL,NULL);";
+                $result = mysqli_query($conex,$query);   
+                $query = "INSERT INTO `temperature_history` (`id`, `mon`, `tue`, `wen`, `thr`, `fri`, `sat`, `sun`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)";
             }else if($role == 2){
                 $user = "doctor";
                 $query = "INSERT INTO `doctor` (`id`, `name`, `last_name`, `mail`, `Vpassword`, `validated`) 

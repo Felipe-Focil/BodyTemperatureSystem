@@ -58,19 +58,20 @@ CREATE TABLE super_administrator (
 ALTER TABLE super_administrator ADD CONSTRAINT super_administrator_pk PRIMARY KEY ( id );
 ALTER TABLE `super_administrator` CHANGE `id` `id` INT(10) NOT NULL AUTO_INCREMENT;
 
-CREATE TABLE temperature (
-    id                     INT(10) NOT NULL,
-    degrees                FLOAT,
-    dateTemp               DATE NOT NULL,
-    history                INT(10) NOT NULL
-);
 
 
-ALTER TABLE temperature ADD CONSTRAINT temperature_pk PRIMARY KEY ( id );
-ALTER TABLE `temperature` CHANGE `id` `id` INT(10) NOT NULL AUTO_INCREMENT;
+
+
 
 CREATE TABLE temperature_history (
     id             INT(10) NOT NULL
+    mon            FLOAT(10),
+    tue            FLOAT(10),
+    wen            FLOAT(10),
+    thr            FLOAT(10),
+    fri            FLOAT(10),
+    sat            FLOAT(10),
+    sun            FLOAT(10)
 );
 
 
@@ -91,9 +92,7 @@ ALTER TABLE patient
     ADD CONSTRAINT patient_temperature_history_fk FOREIGN KEY ( temperature_history_id )
         REFERENCES temperature_history ( id );
 
-ALTER TABLE temperature
-    ADD CONSTRAINT temperature_temperature_history_fk FOREIGN KEY ( history )
-        REFERENCES temperature_history ( id );
+
 
         ALTER TABLE super_administrator ADD UNIQUE(mail);
         ALTER TABLE administrator ADD UNIQUE(mail);
