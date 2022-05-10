@@ -31,7 +31,7 @@
             <td><INPUT TYPE="Number" name="Temperature" MAX="4" width="10px"></td>
             <br>
             <td>
-                <input type="button" value="SIGN_UP" onclick="valida_envia()" style="background-color: rgb(205, 249, 72);"> Ok</td>
+                <input type="button" value="Ok" onclick="valida_envia()" style="background-color: rgb(205, 249, 72);"> </td>
                 
                 
             </td>
@@ -46,9 +46,6 @@
 </body>
 <script type="text/javascript">
   function valida_envia(){
-    
-      
-  alert("Succesfull Sign Up. Please check your email")
   
       document.fvalida.submit();
       
