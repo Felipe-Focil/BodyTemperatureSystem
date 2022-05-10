@@ -32,6 +32,9 @@
         ?>
         <br><h2>Please Complete Verification Proccess</h2><br>
         <h4>You can close this window</h4>
+        <a href="Navigation_HTML/Login_A.html">
+            <input type=button value="Log In">
+        </a>
     </div>
 
 </body>
