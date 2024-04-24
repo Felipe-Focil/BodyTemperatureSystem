@@ -1,15 +1,22 @@
-# Body Temperature System
-Body Temperature System developed for putting in practice SRUM methodology
+# Body Temperature Monitoring System
 
-Proyect made in the Agile Proyect Administration subject of the Universidad Popular Autónoma del Estado de Puebla
+The Body Temperature Monitoring System is a project developed to implement the SRUM methodology. It was created as part of the Agile Project Administration subject at the Universidad Popular Autónoma del Estado de Puebla.
 
-Project devoloped with the objective of taking the body temperature and recording in a system that allows a Patient see if have fever, graph and show in a table de historic temperatures in the last 7 days.
+## Project Overview
 
-Also there would be a Doctor, that would see the information for its patients, an Admin and Super Admin, that would have the privilages of creating , edit and deleting account.
+The objective of this project is to create a system capable of measuring body temperature and recording it in a way that allows patients to monitor their health status. Key features include:
 
-Developed by:
+- **Temperature Measurement:** The system enables the measurement of body temperature and provides feedback to users, indicating whether they have a fever.
+- **Data Visualization:** Patients can visualize their temperature history through graphs and tables, allowing them to track changes over the past 7 days.
+- **User Roles:** The system supports multiple user roles, including Patients, Doctors, Admins, and Super Admins. Each role has specific privileges for account management and data access.
 
-Felipe Rafael Focil Mendoza
-Rubi Hernandez Garcia
-Alan Emanuelle Cruz Carrasco
-Erik Francisco Gomez Medina
+## Project Team
+
+This project was developed by:
+
+- Felipe Rafael Focil Mendoza
+- Rubi Hernandez Garcia
+
+## Disclaimer
+
+**Warning:** This project is no longer under active development.
